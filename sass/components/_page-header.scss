@@ -70,31 +70,6 @@
     transition: color 250ms $timingFunction;
 }
 
-.navigation__link:hover,
-.navigation__anchor:hover,
-.contacts__tel:hover,
-.contacts__email:hover,
-.footer__address:hover,
-.button-item:hover,
-.footer__email:hover,
-.footer__tel:hover,
-.contacts--email-icon:hover,
-.contacts--tel-icon:hover {
-    color: $accentColor;
-}
-
-.navigation__link:focus,
-.navigation__anchor:focus,
-.contacts__tel:focus,
-.contacts__email:focus,
-.footer__address:focus,
-.footer__email:focus,
-.footer__tel:focus,
-.contacts--email-icon:focus,
-.contacts--tel-icon:focus {
-    color: $accentColor;
-}
-
 .contacts__tel,
 .contacts__email {
     @include font(14px, 1.14, 500, 0.02em);

@@ -45,7 +45,6 @@
 .projects__text {
     @include font(18px, 1.55, 400, 0.03em);
     color: $secondTitleColor;
-
     background-color: $accentColor;
     background: linear-gradient(rgba(33, 150, 243, 0.9), rgba(33, 150, 243, 0.9));
     padding: 63px 24px 63px 24px;
