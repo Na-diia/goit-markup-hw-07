@@ -1,0 +1,88 @@
+.footer {
+    background: $secondBackgroundColor;
+    border: 1px solid #ECECEC;
+    align-items: center;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &-container {
+         display: flex;
+        align-items: baseline;
+    }
+
+    &-box {
+     margin-left: 0;
+     margin-right: 0;
+    }
+
+    &__email {
+        margin-bottom: 9px;
+    }
+    
+    &__title {
+        @include font(14px, 1.14, 700, 0.03em);
+        text-transform: uppercase;
+        color: $secondTitleColor;
+    
+        margin-bottom: 20px;
+    }
+}
+
+.footer__address {
+    font-style: normal;
+    @include font(14px, 1.71, 400, 0.03em);
+    color: $secondTitleColor;
+
+    display: block;
+    min-width: 211px;
+    min-height: 21px;
+    margin-top: 20px;
+    margin-bottom: 9px;
+
+    transition: color 250ms $timingFunction;
+}
+
+.footer__email,
+.footer__tel {
+    font-style: normal;
+    @include font(14px, 1.71, 400, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+
+    display: block;
+    min-height: 21px;
+
+    transition: color 250ms $timingFunction;
+}
+
+.footer-social {
+    margin-left: 70px;
+    
+    &__list {
+        display: flex;
+        gap: 10px;
+    }
+
+    &--icon {
+        fill: $secondTitleColor;
+        transition: fill 250ms $timingFunction;
+    }
+}
+
+.footer-social__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms $timingFunction;
+
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+    }
+}

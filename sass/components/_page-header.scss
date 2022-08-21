@@ -1,0 +1,116 @@
+.header {
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+
+    &-container {
+            display: flex;
+            align-items: center;
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        margin-right: 50px;
+        position: relative;
+        transition: color 250ms $timingFunction;
+    }
+
+    &__list {
+    display: flex;
+    }
+}
+
+.up-text::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 4px;
+    background-color: $accentColor;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.under-text::after {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 4px;
+    background-color: $accentColor;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.contacts__tel {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: 30px;
+    transition: color 250ms $timingFunction;
+}
+
+.contacts__email {
+    margin-left: 318px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms $timingFunction;
+}
+
+.contacts--email-icon,
+.contacts--tel-icon {
+    fill: currentColor;
+    margin-right: 10px;
+    background-position: center;
+    background-size: contain;
+    transition: color 250ms $timingFunction;
+}
+
+.navigation__link:hover,
+.navigation__anchor:hover,
+.contacts__tel:hover,
+.contacts__email:hover,
+.footer__address:hover,
+.button-item:hover,
+.footer__email:hover,
+.footer__tel:hover,
+.contacts--email-icon:hover,
+.contacts--tel-icon:hover {
+    color: $accentColor;
+}
+
+.navigation__link:focus,
+.navigation__anchor:focus,
+.contacts__tel:focus,
+.contacts__email:focus,
+.footer__address:focus,
+.footer__email:focus,
+.footer__tel:focus,
+.contacts--email-icon:focus,
+.contacts--tel-icon:focus {
+    color: $accentColor;
+}
+
+.contacts__tel,
+.contacts__email {
+    @include font(14px, 1.14, 500, 0.02em);
+    font-style: normal;
+    color: $firstTextColor;
+}
+
+.navigation__link {
+    @include font(14px, 1.14, 500, 0.02em);
+    color: $firstTitleColor;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+}
+
+.navigation__anchor {
+    @extend .navigation__link;
+    transition: color 250ms $timingFunction;
+}

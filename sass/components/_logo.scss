@@ -1,0 +1,24 @@
+.logo {
+    font-family: "Raleway", sans-serif;
+    @include font(26px, 1.2, 700, 0.03em);
+    color: $logoColor;
+    margin-right: 93px;
+
+   &__text {
+    font-family: "Raleway", sans-serif;
+    @include font(26px, 1.2, 700, 0.03em);
+    color: $accentColor;
+    margin-top: 24px;
+    margin-bottom: 25px;
+    width: 45px;}
+}
+
+.footer__logo {
+    font-family: 'Raleway', sans-serif;
+    @include font(26px, 1.2, 700, 0.03em);
+    color: $secondTitleColor;
+
+    &--part {
+        color: $accentColor;
+    }
+}

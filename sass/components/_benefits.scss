@@ -1,0 +1,22 @@
+.benefits__box-icon {
+    width: 270px;
+    height: 120px;
+    background-color: $firstBackgroundColor;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits__title {
+    @include font(14px, 1.14, 700, 0.03em);
+    text-transform: uppercase;
+    color: $firstTitleColor;
+
+    margin-bottom: 10px;
+}
+
+.benefits__text {
+    @include font(14px, 1.71, 400, 0.03em);
+    color: $firstTextColor;
+}

@@ -1,0 +1,19 @@
+.pictures__title,
+.workers__title,
+.clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $firstTitleColor;
+
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.benefits__list,
+.pictures__list,
+.workers__list {
+    display: flex;
+    gap: $cardSetGap;
+}
